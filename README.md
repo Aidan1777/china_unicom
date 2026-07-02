@@ -40,7 +40,21 @@
 
 ## 安装
 
-将 `china_unicom` 文件夹复制到 HA 的 `custom_components/` 目录下，重启 Home Assistant：
+### 方式一：HACS（推荐，支持自动更新）
+
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
+
+1. 在 HACS 中点击右上角 ⋮ → **自定义存储库**
+2. 填入仓库地址：`https://github.com/Aidan1777/china_unicom`
+3. 类别选择 **集成**
+4. 点击添加，然后在 HACS 中搜索 **中国联通话费查询** 下载安装
+5. 重启 Home Assistant
+
+安装后可在 HACS 中收到更新通知，一键升级。
+
+### 方式二：手动安装
+
+将 `custom_components/china_unicom/` 整个文件夹复制到 HA 的 `custom_components/` 目录下，重启 Home Assistant：
 
 ```
 custom_components/
@@ -50,6 +64,7 @@ custom_components/
     ├── config_flow.py
     ├── const.py
     ├── coordinator.py
+    ├── hacs.json
     ├── icons.json
     ├── manifest.json
     ├── sensor.py
@@ -191,7 +206,8 @@ custom_components/
 | `coordinator.py` | DataUpdateCoordinator 定时拉取数据 |
 | `api.py` | 封装联通 6 个 API 的客户端（鉴权 + 数据拉取） |
 | `sensor.py` | 单实体传感器，暴露 state + extra_state_attributes |
-| `manifest.json` | HA 集成清单 |
+| `manifest.json` | HA 集成清单（含版本号） |
+| `hacs.json` | HACS 商店元数据，用于远程更新 |
 | `strings.json` | 英文界面文案 |
 | `translations/zh-Hans.json` | 简体中文界面文案 |
 | `icons.json` | 图标定义 |

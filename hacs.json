@@ -1,0 +1,8 @@
+{
+  "name": "中国联通话费查询",
+  "country": "CN",
+  "homeassistant": "2024.1.0",
+  "render_readme": true,
+  "zip_release": false,
+  "filename": "china_unicom.zip"
+}
