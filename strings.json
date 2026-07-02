@@ -1,0 +1,24 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "China Unicom",
+        "description": "Set up China Unicom integration",
+        "data": {
+          "openid": "OpenID",
+          "phone_number": "Phone number (optional)",
+          "refresh_interval": "Refresh interval (minutes)"
+        }
+      }
+    },
+    "error": {
+      "openid_required": "OpenID is required",
+      "cannot_connect": "Connection failed",
+      "invalid_auth": "Invalid authentication",
+      "unknown": "Unknown error"
+    },
+    "abort": {
+      "already_configured": "Device already configured"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "domain": "china_unicom",
+  "name": "中国联通话费查询",
+  "documentation": "https://github.com/aNdria19/unicom_ha_integration",
+  "config_flow": true,
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "codeowners": [
+    "@Aria"
+  ],
+  "version": "0.1.0"
+}

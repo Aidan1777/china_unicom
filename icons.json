@@ -1,0 +1,14 @@
+{
+  "entity": {
+    "sensor": {
+      "unicom": {
+        "default": "mdi:sim",
+        "state": {
+          "balance_high": "mdi:credit-card-check",
+          "balance_low": "mdi:credit-card-remove",
+          "not_available": "mdi:sim-off"
+        }
+      }
+    }
+  }
+}
